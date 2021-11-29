@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Spartan:wght@700&display=swap");
+.container {
+  width: 100%;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background-color: #e6e6e6;
+}
+
+.holder {
+  width: 540px;
+  height: 600px;
+  padding-inline: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+  .holder {
+    width: 320px;
+    height: 600px;
+  }
+}
+
+.head {
+  -webkit-box-flex: 0.22;
+      -ms-flex: 0.22;
+          flex: 0.22;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.head .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 100%;
+  -webkit-box-flex: .3;
+      -ms-flex: .3;
+          flex: .3;
+}
+
+.head .title p {
+  color: #35352c;
+  font-family: "Spartan", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  margin-left: 12px;
+}
+
+@media screen and (max-width: 600px) {
+  .head .title p {
+    font-size: 1.5rem;
+  }
+}
+
+.head .theme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0.6;
+      -ms-flex: 0.6;
+          flex: 0.6;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media screen and (max-width: 600px) {
+  .head .theme {
+    -webkit-box-flex: 0.4;
+        -ms-flex: 0.4;
+            flex: 0.4;
+  }
+}
+
+.head .theme p {
+  color: #35352c;
+  text-transform: uppercase;
+  font-family: "Spartan", sans-serif;
+  font-size: .7rem;
+}
+
+@media screen and (max-width: 600px) {
+  .head .theme p {
+    font-size: .4rem;
+  }
+}
+
+.head .togglerCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 0.15;
+      -ms-flex: 0.15;
+          flex: 0.15;
+}
+
+@media screen and (max-width: 600px) {
+  .head .togglerCont {
+    -webkit-box-flex: 0.23;
+        -ms-flex: 0.23;
+            flex: 0.23;
+  }
+}
+
+.head .togglerCont .track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
+  -webkit-box-flex: 0.6;
+      -ms-flex: 0.6;
+          flex: 0.6;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 50px;
+  margin-inline: auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media screen and (max-width: 600px) {
+  .head .togglerCont .track {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+    margin-top: 50px;
+  }
+}
+
+.head .togglerCont .track span {
+  color: #35352c;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .head .togglerCont .track span {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+    letter-spacing: 7px;
+  }
+}
+
+.head .togglerCont .togglerGrp {
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0.45;
+      -ms-flex: 0.45;
+          flex: 0.45;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .head .togglerCont .togglerGrp {
+    padding: 0px;
+    width: 80px;
+  }
+}
+
+.head .togglerCont .togglerGrp .tog[type="checkbox"] {
+  visibility: hidden;
+}
+
+.head .togglerCont .togglerGrp .tog[type="checkbox"]:checked + .label::after {
+  left: calc(100%-10px);
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.head .togglerCont .togglerGrp .label {
+  margin-right: 10px;
+  width: 100%;
+  height: 15px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: relative;
+  cursor: pointer;
+  background-color: #d1cccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 600px) {
+  .head .togglerCont .togglerGrp .label {
+    -webkit-transform: translate(-12%, 25%);
+            transform: translate(-12%, 25%);
+    margin-right: 10px;
+  }
+}
+
+.head .togglerCont .togglerGrp .label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 15px;
+  width: 12px;
+  height: 10px;
+  border-radius: 25px;
+  background-color: #893901;
+}
+
+@media screen and (max-width: 600px) {
+  .head .togglerCont .togglerGrp .label::after {
+    left: 20px;
+  }
+}
+
+.screen {
+  margin-top: 10px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-align: right;
+  padding-right: 17px;
+  font-size: 1.75rem;
+  font-family: "Spartan", sans-serif;
+  border: none;
+  border-radius: 14px;
+  background-color: #ededed;
+  color: #35352c;
+  height: 90px;
+}
+
+.casein {
+  margin-top: 20px;
+  -webkit-box-flex: 0.8;
+      -ms-flex: 0.8;
+          flex: 0.8;
+  background-color: #d1cccc;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-inline: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 2%;
+  border-radius: 10px;
+}
+
+.casein > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 23%;
+          flex: 1 1 23%;
+}
+
+.buttons {
+  margin: 1%;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-family: "Spartan", sans-serif;
+}
+
+.special {
+  margin: 1%;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-family: "Spartan", sans-serif;
+  color: #35352c;
+  background-color: #e6e6e6;
+}
+
+.equal {
+  margin: 1%;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-family: "Spartan", sans-serif;
+  color: #fff;
+  background-color: #893901;
+}
+/*# sourceMappingURL=stylestwo.module.css.map */

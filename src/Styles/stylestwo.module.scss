@@ -1,0 +1,208 @@
+@import '../Variables/variabletwo';
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: $background;
+   
+}
+
+.holder {
+    width: 540px;
+    height: 600px;
+    padding-inline: 20px;
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: 600px) {
+        width: 320px;
+        height: 600px;
+    } 
+}
+
+.head {
+    flex: 0.22;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .title {
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+        flex: .3;
+        p {
+            color: $text;
+            font-family: $font;
+            font-size: 2.5rem;
+            margin-bottom: 0;
+            margin-left: 12px;
+            @media screen and (max-width: 600px) {
+                font-size: 1.5rem;
+            } 
+        }
+    }
+
+    .theme {
+        display: flex;
+        flex: 0.6;
+        align-items: flex-end;
+        justify-content: flex-end;
+        @media screen and (max-width: 600px) {
+            flex: 0.4;
+        } 
+        p {
+            color: $text;
+            text-transform: uppercase;
+            font-family: $font;
+            font-size: .7rem;
+            @media screen and (max-width: 600px) {
+                font-size: .4rem;
+            }
+        }
+    }
+
+    .togglerCont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 0.15;
+        @media screen and (max-width: 600px) {
+            flex: 0.23;
+           }
+       .track {
+           display: flex;
+           margin-top: 40px;
+           transform: translateX(-5px); 
+           flex: 0.6;
+           align-items: flex-end;
+           width: 50px;
+           margin-inline: auto;
+           justify-content: space-evenly;
+           @media screen and (max-width: 600px) {
+            transform: translateX(-5px); 
+            margin-top: 50px;
+           }
+           span {
+               color: $text;
+               font-size: 10px;
+               cursor: pointer;
+               @media screen and (max-width: 600px) {
+                transform: translateX(8px); 
+                letter-spacing: 7px;
+               }
+           }
+       }
+
+       .togglerGrp {
+           transform: translateX(-10px); 
+           display: flex;
+           flex: 0.45;
+           margin-top: 5px;
+           @media screen and (max-width: 600px) {
+                padding: 0px;
+                width: 80px;
+            } 
+           .tog[type="checkbox"] {
+               visibility: hidden;
+               &:checked + .label::after {
+                   left: calc(100%-10px);
+                   transform: translateX(0%);
+               }
+           }
+           .label {
+               margin-right: 10px;
+               width: 100%;
+               height: 15px;
+               border-radius: 10px;
+               display: flex;
+               justify-content: flex-start;
+               position: relative;
+               cursor: pointer;
+               background-color: $keypad;
+               transition: 0.5s;
+               @media screen and (max-width: 600px) {
+                    transform: translate(-12%,25%);
+                    margin-right: 10px;
+               } 
+               &::after {
+                   content: "";
+                   position: absolute;
+                   top: 2px;
+                   left: 15px;
+                   width: 12px;
+                   height: 10px;
+                   border-radius: 25px;
+                   background-color: $toggler;
+                   @media screen and (max-width: 600px) {
+                        left: 20px;
+                   } 
+                }
+           }
+       }
+    }
+}
+
+.screen {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    padding-right:17px;
+    font-size: 1.75rem;
+    font-family: $font;
+    border: none;
+    border-radius: 14px;
+    background-color: $screen;
+    color: $text;
+    height: 90px;
+}
+ 
+
+.casein {
+    margin-top: 20px;
+    flex: 0.8;
+    background-color: $keypad;
+    width: 100%;
+    display: flex;
+    margin-inline: auto;
+    flex-wrap: wrap;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.casein > * {
+ flex: 1 1 23%;
+}
+
+.buttons {
+    margin: 1%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: $font;
+}
+
+
+.special {
+    margin: 1%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: $font;
+    color: $text;
+    background-color: $background; 
+}
+
+.equal {
+    margin: 1%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: $font;
+    color: $white;
+    background-color: $toggler;
+}
