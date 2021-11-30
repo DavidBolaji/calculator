@@ -40,7 +40,7 @@ const Head = (props) => {
                 <p>theme</p>
             </div>
             <div className={props.togglerCont} style={{position: 'relative'}}>
-                <div className={props.tracker} style={{position:'absolute',right:'6px',top: '19px',zIndex:5, opacity:1}}>
+                <div className={props.tracker} style={{position:'absolute',right:'17px',top: '19px',zIndex:5, opacity:1}}>
                     <span  className={props.spanGrp} onClick={() => clickHandler(1)}>1</span>
                     <span  className={props.spanGrp} onClick={() => clickHandler(2)}>2</span>
                     <span  className={props.spanGrp} onClick={() => clickHandler(3)}>3</span>
