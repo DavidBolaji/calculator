@@ -1,8 +1,30 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { themeActionNext } from './../Store/Action/ThemeAction';
 const Head = (props) => {
+
+    const [width, setWidth] = useState(window.innerWidth)
+
+    useEffect(() => {
+        const resizeHandler = () => setWidth(window.innerWidth)
+        window.addEventListener("resize", resizeHandler)
+        return () => window.removeEventListener("resize", resizeHandler);
+    }, [width])
+
     const dispatch = useDispatch()
+
+    let realStyle;
+
+    const large = {position:'absolute',right:'-5px',top: '56px',zIndex:3, transform: 'translateY(10px)'}
+    const small = {position:'absolute',right:'3px',top: '66px',zIndex:3, transform: 'translateY(10px)'}
+
+    console.log(width);
+
+    if(width < 600){
+        realStyle = small;
+    } else {
+        realStyle = large;
+    }
 
     const clickHandler = (num) => {
         window.localStorage.setItem('THEME', num)
@@ -31,7 +53,7 @@ const Head = (props) => {
                 
                 <div className={props.togglerGrp} style={{position: 'relative'}}>
                     <input type="checkbox" name="toggler" id="toggler" className={props.tog} />
-                    <label htmlFor="toggler" className={props.labelGrp} className={props.label} style={{position:'absolute',right:'-5px',top: '55px',zIndex:3, transform: 'translateY(10px)'}}></label>
+                    <label htmlFor="toggler" className={props.labelGrp} className={props.label} style={realStyle}></label>
                 </div>
             </div>
         </div>
