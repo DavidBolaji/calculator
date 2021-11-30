@@ -29,7 +29,7 @@ const Head = (props) => {
                     <span  className={props.spanGrp} onClick={() => clickHandler(3)}>3</span>
                 </div>
                 
-                <div className={props.togglerGrp}>
+                <div className={props.togglerGrp} >
                     <input type="checkbox" name="toggler" id="toggler" className={props.tog} />
                     <label htmlFor="toggler" className={props.labelGrp} className={props.label}></label>
                 </div>

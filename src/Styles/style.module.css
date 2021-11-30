@@ -197,7 +197,6 @@
 }
 
 .head .togglerCont .togglerGrp .tog[type="checkbox"]:checked + .label::after {
-  left: calc(100%-10px);
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
 }
@@ -232,7 +231,7 @@
   content: "";
   position: absolute;
   top: 2px;
-  left: 2px;
+  left: 5px;
   width: 12px;
   height: 10px;
   border-radius: 25px;
@@ -241,7 +240,7 @@
 
 @media screen and (max-width: 600px) {
   .head .togglerCont .togglerGrp .label::after {
-    left: 3px;
+    left: 6px;
   }
 }
 
@@ -255,7 +254,7 @@
       -ms-flex-pack: end;
           justify-content: flex-end;
   text-align: right;
-  padding-right: 17px;
+  padding-right: 10px;
   font-size: 1.75rem;
   font-family: "Spartan", sans-serif;
   border: none;

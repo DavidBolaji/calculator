@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Container from './Components/Container';
 import Head from './Components/Head';
 import { useSelector, useDispatch } from 'react-redux';
@@ -88,7 +88,7 @@ const getSome = (newArr) => {
 function App() {
     const [clear, setClear] = useState(false)
 
-    const [loaded, setLoaded] = useState(false)
+   
     // load theme with redux
     const Theme = useSelector(state => state.theme);
     // load calculator with redux
@@ -230,7 +230,7 @@ function App() {
 
     }
 
-    console.log(newArr, arr);
+    
 
 
     const btnLists = btnData(buttons, special, equal).map(list => {

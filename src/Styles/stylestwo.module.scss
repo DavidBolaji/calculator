@@ -108,7 +108,7 @@
            .tog[type="checkbox"] {
                visibility: hidden;
                &:checked + .label::after {
-                   left: calc(100%-10px);
+                //    left: calc(100%-10px);
                    transform: translateX(0%);
                }
            }
@@ -151,7 +151,7 @@
     display: flex;
     justify-content: flex-end;
     text-align: right;
-    padding-right:17px;
+    padding-right:5px;
     font-size: 1.75rem;
     font-family: $font;
     border: none;
