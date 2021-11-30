@@ -20,7 +20,7 @@ const Head = (props) => {
 
     console.log(width);
 
-    if(width < 600){
+    if(width < 800){
         realStyle = small;
     } else {
         realStyle = large;
