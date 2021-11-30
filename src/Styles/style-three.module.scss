@@ -98,7 +98,7 @@
        .togglerGrp {
            transform: translateX(-10px); 
            display: flex;
-           flex: 0.45;
+           flex: 0.95;
            margin-top: 5px;
            @media screen and (max-width: 600px) {
                 padding: 0px;
@@ -113,7 +113,7 @@
            }
            .label {
                margin-right: 10px;
-               width: 100%;
+               width: 70%;
                height: 15px;
                border-radius: 10px;
                display: flex;
@@ -130,7 +130,7 @@
                    content: "";
                    position: absolute;
                    top: 2px;
-                   left: 25px;
+                   left: 33px;
                    width: 12px;
                    height: 10px;
                    border-radius: 25px;
