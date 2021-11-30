@@ -21,7 +21,7 @@
           flex-direction: column;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .holder {
     width: 320px;
     height: 600px;
@@ -65,7 +65,7 @@
   margin-left: 12px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .head .title p {
     font-size: 1.5rem;
   }
@@ -86,7 +86,7 @@
           justify-content: flex-end;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .head .theme {
     -webkit-box-flex: 0.4;
         -ms-flex: 0.4;
@@ -101,7 +101,7 @@
   font-size: .7rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .head .theme p {
     font-size: .4rem;
   }
@@ -123,7 +123,7 @@
           flex: 0.15;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .head .togglerCont {
     -webkit-box-flex: 0.23;
         -ms-flex: 0.23;
@@ -151,7 +151,7 @@
           justify-content: space-evenly;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .head .togglerCont .track {
     -webkit-transform: translateX(-5px);
             transform: translateX(-5px);
@@ -165,7 +165,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .head .togglerCont .track span {
     -webkit-transform: translateX(8px);
             transform: translateX(8px);
@@ -185,7 +185,7 @@
   margin-top: 5px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .head .togglerCont .togglerGrp {
     padding: 0px;
     width: 80px;
@@ -219,7 +219,7 @@
   transition: 0.5s;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .head .togglerCont .togglerGrp .label {
     -webkit-transform: translate(-12%, 25%);
             transform: translate(-12%, 25%);
@@ -238,7 +238,7 @@
   background-color: #00DECF;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .head .togglerCont .togglerGrp .label::after {
     left: 35px;
   }
